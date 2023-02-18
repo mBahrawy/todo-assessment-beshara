@@ -1,0 +1,11 @@
+<div [ngClass]="{ reminder: todo.reminder}" *ngIf="todo" class="todo d-flex" (click)="onToggle(todo)">
+ <div class="flex-grow-1">
+  <h4>{{ todo.text }}
+  </h4>
+  <h6>{{ todo.day }}</h6>
+ </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <button  class="btn btn-sm btn-danger " (click)="onDelete(todo)">Delete
+    </button>
+  </div>
+</div>

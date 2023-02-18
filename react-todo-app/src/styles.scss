@@ -1,0 +1,57 @@
+// Importing partails
+@import "@/assets/styles/fonts";
+@import "@/assets/styles/variables";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Global styles
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: normal;
+}
+
+:root {
+  font-size: 1rem;
+}
+
+@media #{$media-laptop-large} {
+  :root {
+    font-size: 0.9rem;
+  }
+}
+
+@media #{$media-tablet} {
+  :root {
+    font-size: 0.8rem;
+  }
+}
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.todo-container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
