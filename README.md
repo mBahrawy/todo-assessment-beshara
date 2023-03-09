@@ -1,5 +1,3 @@
-This is my assessmet for Frontend position at Beshara Tech
-
 ## Todo App 
 1. Angular
 2. React
